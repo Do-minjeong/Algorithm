@@ -1,6 +1,4 @@
-package programmers.lv_1;
-
-import java.util.Iterator;
+package programmers.lv_1.숫자문자열과_영단어;
 
 /* 
  * 일시 : 2021.12.05
@@ -13,31 +11,8 @@ import java.util.Iterator;
  * 				"123"					123
  * 비고 : 
  */
-public class NumAndWord {
-
-	public static void main(String[] args) {
-		String[] input = {"one4seveneight", "23four5six7", "2three45sixseven", "123"};
-		for (int i = 0; i < input.length; i++) {
-			System.out.println(solution(input[i]));
-			System.out.println(best_solution(input[i]));
-		}
-		
-	}
-	/*
-	 * Point 1. replaceAll 사용!
-	 * 
-	 * */
-	public static int best_solution(String s) {
-		String[] numbers = {"zero", "one", "two", "three", "four","five", "six", "seven", "eight", "nine"};
-		
-		for (int i = 0; i < numbers.length; i++) {
-			s = s.replaceAll(numbers[i], String.valueOf(i));
-		}
-		
-		return Integer.parseInt(s);
-	}
-	
-	public static int solution(String s) {
+public class Solution {
+	public int solution(String s) {
 		String out = "";
 		StringBuffer sb = new StringBuffer(s);
 		
@@ -56,7 +31,7 @@ public class NumAndWord {
 	}
 	
 	
-	public static String[] strToNum(String s) {
+	public String[] strToNum(String s) {
 		String[] strNums = {"zero", "one", "two", "three", "four","five", "six", "seven", "eight", "nine"};
 		String[] out = new String[2];
 		

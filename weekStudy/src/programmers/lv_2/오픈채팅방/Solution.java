@@ -1,4 +1,4 @@
-package programmers.lv_2;
+package programmers.lv_2.오픈채팅방;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,18 +18,7 @@ import java.util.Map;
  *  		,"Change uid4567 Ryan"]
  * 비고 : 
  */
-public class OpenChat {
-
-	public static void main(String[] args) {
-		String[] input = {"Enter uid1234 Muzi"
-						, "Enter uid4567 Prodo"
-						, "Leave uid1234"
-						, "Enter uid1234 Prodo"
-						, "Change uid4567 Ryan" };
-		System.out.println(Arrays.toString(solution(input)));
-		
-	}
-	
+public class Solution {
 	public static String[] solution(String[] record) {
 		Map<String, String> msgMap = new HashMap<String, String>();
 		msgMap.put("Enter", "님이 들어왔습니다.");
