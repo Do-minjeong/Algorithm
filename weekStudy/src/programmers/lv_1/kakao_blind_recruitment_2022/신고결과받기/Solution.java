@@ -27,6 +27,7 @@ public class Solution {
 	        for (int i = 0; i < idLen; i++) {
 				id_map.put(id_list[i], i);
 			}
+	        // report 리스트 중복 제거
 	        HashSet<String> set = new HashSet<String>(Arrays.asList(report));
 	        Iterator<String> ir = set.iterator();
 	        
@@ -37,7 +38,7 @@ public class Solution {
 				int j = id_map.get(id[1]);
 				report_list[i][j] = true;	
 			}
-	        
+	        // 신고 from to 2차원배열로 체크 -> k보다 큰 user는 stop_user 배열에 true
 	        boolean[] stop_user = new boolean[idLen];
 	        for (int i = 0; i < idLen; i++) {
 	        	int ksum = 0;
@@ -48,7 +49,7 @@ public class Solution {
 				}
 	        	if(ksum >= k) stop_user[i] = true;
 			}
-	        
+	        // 내가 신고한 유저가 정지대상이면 answer[i]++ 
 	        for (int i = 0; i < idLen; i++) {
 	        	for(int j = 0; j < idLen; j++) {
 	        		if(i==j) continue;
