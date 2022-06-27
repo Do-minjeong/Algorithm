@@ -26,7 +26,7 @@ public class SolutionList {
 	 * 문제명 : 신고결과받기
 	 * 답    : [2,1,1,0] , [0,0]
 	 * */
-	public static void 신고결과받기() {
+	public void 신고결과받기() {
 		programmers.lv_1.kakao_blind_recruitment_2022.신고결과받기.Solution s = new programmers.lv_1.kakao_blind_recruitment_2022.신고결과받기.Solution();
 		
 		String[][] input01 = {{"muzi", "frodo", "apeach", "neo"}, {"con", "ryan"} };
@@ -41,7 +41,7 @@ public class SolutionList {
 	 * LEVEL : 2
 	 * 문제명 : 피로도
 	 * */
-	public static void 피로도() {
+	public void 피로도() {
 		programmers.lv_2.피로도.Solution s = new programmers.lv_2.피로도.Solution();
 		int input01 = 80;
 		int[][] input02 = {{80,20},{50,40},{30,10}};
@@ -53,7 +53,7 @@ public class SolutionList {
 	 * LEVEL : 2
 	 * 문제명 : 오픈채팅방
 	 * */
-	public static void 오픈채팅방() {
+	public void 오픈채팅방() {
 		programmers.lv_2.오픈채팅방.Solution s = new programmers.lv_2.오픈채팅방.Solution();
 		
 		String[] input = {"Enter uid1234 Muzi"
@@ -87,4 +87,14 @@ public class SolutionList {
 		}
 	}
 	
+	public void 폰켓몬() {
+		programmers.lv_1.폰켓몬.Solution s = new programmers.lv_1.폰켓몬.Solution();
+		int[] nums1 = {3,1,2,3};
+		int[] nums2 = {3,3,3,2,2,4};
+		int[] nums3 = {3,3,3,2,2,2};
+		
+		System.out.println(s.solution(nums1));
+		System.out.println(s.solution(nums2));
+		System.out.println(s.solution(nums3));
+	}
 }
