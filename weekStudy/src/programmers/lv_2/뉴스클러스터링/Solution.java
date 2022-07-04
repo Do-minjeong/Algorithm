@@ -6,7 +6,7 @@ import java.util.Map;
 
 /* 
  * 일시 : 2022.07.04
- * 문제명 : 뉴스클러스터링
+ * 문제명 : 2018 KAKAO BLIND RECRUITMENT - [1차] 뉴스클러스터링
  * 난이도 : ★★★
  * 입출력 예시 : 	input01			input02				output
  * 				"FRANCE"		"french"			16384
@@ -115,7 +115,7 @@ public class Solution {
 	/*
 	 * 문자열 조합 만들기
 	 * */
-	public Map<String, Integer> makeMap(String str){
+	private Map<String, Integer> makeMap(String str){
 		Map<String, Integer> out = new HashMap<String, Integer>();
 		str = str.toUpperCase();
 		
