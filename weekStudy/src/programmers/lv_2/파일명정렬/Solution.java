@@ -32,7 +32,6 @@ public class Solution {
 		String[] answer = new String[files.length];
 		List<FileName> fileList = new ArrayList<FileName>();
 		for (int i = 0; i < files.length; i++) {
-			System.out.println(files[i]);
 			FileName fn = new FileName(i, files[i]);
 			fileList.add(fn);
 		}
@@ -52,9 +51,8 @@ public class Solution {
 			}
 	    });
 		
-		for (int i = 0; i < answer.length; i++) {
-			answer[i] = fileList.get(i).getOrgFileName();
-		}
+		/* List -> Array·Î */
+		for (int i = 0; i < answer.length; i++) answer[i] = fileList.get(i).getOrgFileName();
 		
 		return answer;
 	}
