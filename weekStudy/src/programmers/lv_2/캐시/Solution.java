@@ -15,7 +15,7 @@ import java.util.List;
  * 	5		["Jeju", "Pangyo", "Seoul", "NewYork", "LA", "SanFrancisco", "Seoul", "Rome", "Paris", "Jeju", "NewYork", "Rome"]	52
  * 	2		["Jeju", "Pangyo", "NewYork", "newyork"]																			16
  * 	0		["Jeju", "Pangyo", "Seoul", "NewYork", "LA"]																		25
- * 비고 : 
+ * 비고 : LRU 알고리즘 구현(Least Recently Used) 가장 오랫동안 참조되지 않은 페이지를 교체하는 방식. cache hit인 경우 1분 cache miss인 경우 5분 
  */
 public class Solution {
 	public void execute() {
