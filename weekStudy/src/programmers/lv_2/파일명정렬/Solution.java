@@ -8,7 +8,7 @@ import java.util.List;
 
 /* 
  * 일시 : 2022.07.05
- * 문제명 : 2018 KAKAO BLIND RECRUITMENT - [3차] 파일명 정렬
+ * 문제명 : 2018 KAKAO BLIND RECRUITMENT - [3차] 파일명 정렬 
  * 난이도 : ★★
  * 입출력 예시 : 	
  * input01																				output
