@@ -37,6 +37,7 @@ public class Solution {
 			fileList.add(fn);
 		}
 		
+		/* 파일리스트 정렬 */
 		Collections.sort(fileList, new Comparator<FileName>() {
 			@Override
 			public int compare(FileName o1, FileName o2) {
@@ -72,7 +73,7 @@ public class Solution {
 			this.number = Integer.parseInt(tmpFileName.substring(startIdx, this.endIdx));
 			this.tail = tmpFileName.substring(this.endIdx);
 		}
-		
+		/* 파일명 substring 할 index 구하기 */
 		private void saveIndex(String tmpFileName) {
 			this.startIdx = 0;
 			this.endIdx = 0;
